@@ -6,7 +6,6 @@ import 'package:fitness_app/core/widgets/top_messages.dart';
 import 'package:fitness_app/features/auth/presentation/views/widgets/log_in_form.dart';
 import 'package:fitness_app/features/auth/presentation/views/widgets/platform_section.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
 class LogInViewBody extends StatelessWidget {

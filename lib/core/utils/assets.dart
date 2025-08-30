@@ -24,6 +24,8 @@ class AppImages {
 
   static const String gifsFrame = "assets/Gifs/Frame.gif";
 
+  static const String imagesCheckmarkShieldFill = "assets/Images/checkmark.shield.fill.svg";
+
   static const String imagesPfp = "assets/Images/pfp.png";
 
   static const String imagesProfile = "assets/Images/Profile.svg";

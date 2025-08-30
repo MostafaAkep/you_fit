@@ -1,6 +1,5 @@
 import 'package:fitness_app/core/widgets/rich_app_text.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 class LogInForm extends StatelessWidget {
   const LogInForm({super.key});

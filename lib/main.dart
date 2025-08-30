@@ -25,7 +25,11 @@ class MyApp extends StatelessWidget {
       title: 'Fitness App',
       theme: ThemeData(
         brightness: Brightness.dark,
-        scaffoldBackgroundColor: const Color(0xff121212),
+        scaffoldBackgroundColor: Colors.black,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.black,
+          surfaceTintColor: Colors.transparent,
+        ),
         fontFamily: "SFPRODISPLAY",
         useMaterial3: true,
       ),

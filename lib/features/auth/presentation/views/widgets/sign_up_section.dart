@@ -2,7 +2,6 @@ import 'package:fitness_app/core/navigation/app_router.dart';
 import 'package:fitness_app/core/widgets/rich_app_text.dart';
 import 'package:fitness_app/features/auth/presentation/views/widgets/signup_container.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
 // ignore: must_be_immutable

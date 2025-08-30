@@ -13,11 +13,12 @@ class TopMessages extends StatelessWidget {
       children: [
         Text(
           h1Message,
-          style: const TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
+          style: const TextStyle(
+              fontSize: 32, fontWeight: FontWeight.bold, color: Colors.white),
         ),
         Text(
           h2Message,
-          style: const TextStyle(fontSize: 13, color: Colors.grey),
+          style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w100),
         ),
       ],
     );

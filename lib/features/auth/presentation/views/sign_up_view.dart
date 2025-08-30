@@ -3,14 +3,13 @@ import 'package:fitness_app/features/auth/presentation/views/widgets/sign_up_for
 import 'package:fitness_app/features/auth/presentation/views/widgets/sign_up_section.dart';
 import 'package:fitness_app/core/widgets/top_messages.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 class SignUpView extends StatelessWidget {
   const SignUpView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Padding(
         padding: EdgeInsets.all(18),
         child: SingleChildScrollView(
