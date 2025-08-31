@@ -1,6 +1,6 @@
 import 'package:fitness_app/core/theme/app_colors.dart';
-import 'package:fitness_app/features/home/presentation/views/widgets/current_day_row.dart';
-import 'package:fitness_app/features/home/presentation/views/widgets/weekly_tracker.dart';
+import 'package:fitness_app/features/home/presentation/widgets/current_day_row.dart';
+import 'package:fitness_app/features/home/presentation/widgets/weekly_tracker.dart';
 import 'package:flutter/material.dart';
 
 class ProgressWidget extends StatelessWidget {

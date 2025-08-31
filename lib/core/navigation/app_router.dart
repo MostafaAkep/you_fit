@@ -1,6 +1,6 @@
 import 'package:fitness_app/features/auth/presentation/views/log_in_view.dart';
 import 'package:fitness_app/features/auth/presentation/views/sign_up_view.dart';
-import 'package:fitness_app/features/home/presentation/views/home_view.dart';
+import 'package:fitness_app/features/home/presentation/pages/home_view.dart';
 import 'package:fitness_app/features/onboard/presentation/views/onboard_view.dart';
 import 'package:fitness_app/features/splash/presentation/views/splash_view.dart';
 import 'package:go_router/go_router.dart';
