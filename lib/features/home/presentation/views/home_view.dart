@@ -1,6 +1,7 @@
 import 'package:fitness_app/core/theme/app_colors.dart';
 import 'package:fitness_app/core/utils/assets.dart';
 import 'package:fitness_app/features/home/presentation/views/widgets/calories_tracker.dart';
+import 'package:fitness_app/features/home/presentation/views/widgets/nav_bar.dart';
 import 'package:fitness_app/features/home/presentation/views/widgets/progress_widget.dart';
 import 'package:fitness_app/core/widgets/top_messages.dart';
 import 'package:flutter/material.dart';
@@ -103,6 +104,7 @@ class HomeView extends StatelessWidget {
           ),
         ),
       ),
+      bottomNavigationBar: const CustomBottomNav(),
     );
   }
 }

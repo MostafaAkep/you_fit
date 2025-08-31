@@ -1,4 +1,5 @@
 import 'package:fitness_app/core/navigation/app_router.dart';
+import 'package:fitness_app/core/theme/app_colors.dart';
 
 import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
@@ -25,9 +26,9 @@ class MyApp extends StatelessWidget {
       title: 'Fitness App',
       theme: ThemeData(
         brightness: Brightness.dark,
-        scaffoldBackgroundColor: Colors.black,
+        scaffoldBackgroundColor: AppColors.mainBackgroundColor,
         appBarTheme: const AppBarTheme(
-          backgroundColor: Colors.black,
+          backgroundColor: AppColors.mainBackgroundColor,
           surfaceTintColor: Colors.transparent,
         ),
         fontFamily: "SFPRODISPLAY",
