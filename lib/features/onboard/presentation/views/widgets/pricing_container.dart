@@ -19,7 +19,7 @@ class PricingContainer extends StatelessWidget {
           title: 'Continue',
           titleColor: Colors.black,
           onTap: () {
-            context.go(AppRoutes.kHome);
+            context.push(AppRoutes.kHome);
           },
         ),
         const SizedBox(height: 8),

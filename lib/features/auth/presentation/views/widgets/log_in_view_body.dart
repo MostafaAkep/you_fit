@@ -40,7 +40,7 @@ class LogInViewBody extends StatelessWidget {
               child: RichAppText(
                 'Don`t have an account? ',
                 'Create one',
-                onTapFun: () => context.go(AppRoutes.kSignUp),
+                onTapFun: () => context.push(AppRoutes.kSignUp),
               ),
             )
           ],

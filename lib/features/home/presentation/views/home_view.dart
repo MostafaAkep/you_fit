@@ -1,9 +1,10 @@
 import 'package:fitness_app/core/theme/app_colors.dart';
 import 'package:fitness_app/core/utils/assets.dart';
-import 'package:fitness_app/features/home/presentation/views/widgets/current_day_row.dart';
-import 'package:fitness_app/features/home/presentation/views/widgets/weekly_tracker.dart';
+import 'package:fitness_app/features/home/presentation/views/widgets/calories_tracker.dart';
+import 'package:fitness_app/features/home/presentation/views/widgets/progress_widget.dart';
 import 'package:fitness_app/core/widgets/top_messages.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -27,7 +28,9 @@ class HomeView extends StatelessWidget {
               Icons.notifications,
               color: Colors.white,
             ),
-            onPressed: () {},
+            onPressed: () {
+              context.pop();
+            },
           ),
         ],
       ),
@@ -42,21 +45,60 @@ class HomeView extends StatelessWidget {
                 'Your weekly stat',
                 'This week looks good, keep pushing Yomi💪',
               ),
-              Container(
-                decoration: BoxDecoration(
-                  color: AppColors.backgroundColor,
-                  borderRadius: BorderRadius.circular(24),
-                ),
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 23, vertical: 16),
-                child: const Column(
-                  children: [
-                    CurrentDayRow(),
-                    SizedBox(height: 16),
-                    WeeklyTracker(),
-                  ],
-                ),
-              ),
+              const ProgressWidget(),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                spacing: 12,
+                children: [
+                  const Text(
+                    'Today’s routine',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 28,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: AppColors.backgroundColor,
+                      borderRadius: BorderRadius.circular(24),
+                    ),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 20, vertical: 25),
+                    child: Row(
+                      children: [
+                        const Text(
+                          '7 exercises, 3 sets, 8 reps',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w400,
+                          ),
+                        ),
+                        const Spacer(),
+                        Container(
+                          padding: const EdgeInsets.all(8),
+                          decoration: BoxDecoration(
+                            color: AppColors.yellowGradient,
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          child: const Text(
+                            'Let’s go',
+                            style: TextStyle(
+                                fontSize: 17,
+                                fontWeight: FontWeight.w600,
+                                color: Colors.black),
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                  const CaloriesTracker(),
+                  const SizedBox(
+                    height: 200,
+                  )
+                ],
+              )
             ],
           ),
         ),

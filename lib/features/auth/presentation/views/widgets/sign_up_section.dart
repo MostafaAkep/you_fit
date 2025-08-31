@@ -44,7 +44,7 @@ class _SignUpSectionState extends State<SignUpSection> {
         SignUpContainer(
           onTap: () {
             // context.read<SignUpCubit>().createUser(context);
-            context.go(AppRoutes.kOnBoard);
+            context.push(AppRoutes.kOnBoard);
           },
           containerColor: const Color(0xff222222),
           titleColor: Colors.grey,
@@ -55,7 +55,7 @@ class _SignUpSectionState extends State<SignUpSection> {
           child: RichAppText(
             'Already have an account? ',
             'Log in',
-            onTapFun: () => context.go(AppRoutes.kLogIn),
+            onTapFun: () => context.push(AppRoutes.kLogIn),
           ),
         )
       ],
